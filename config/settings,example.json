@@ -1,0 +1,22 @@
+{
+  "vehicle": "E60 525d M57",
+  "display": {
+    "brightness": 80,
+    "theme": "dark",
+    "rotation": 0
+  },
+  "scales": {
+    "boost_max_bar": 2.5,
+    "rail_max_bar": 2000,
+    "speedo_correction_pct": 0
+  },
+  "sensors": {
+    "egt_enabled": false,
+    "egt_location": "pre_turbine",
+    "oil_pressure_enabled": false,
+    "oil_pressure_bar_per_volt": 4.0
+  },
+  "alerts": {
+    "buzzer_enabled": true
+  }
+}
