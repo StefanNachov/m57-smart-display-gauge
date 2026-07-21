@@ -1,0 +1,16 @@
+[Unit]
+Description=FastLifeBG M57 Digital Gauge
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/m57-gauge-project/src
+ExecStartPre=/sbin/ip link set can0 up type can bitrate 500000 restart-ms 100
+ExecStart=/usr/bin/python3 main.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
